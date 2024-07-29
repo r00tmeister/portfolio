@@ -1,13 +1,12 @@
 <template>
-<Hero></Hero>
+  <div>
+    
+  </div>
 </template>
 
 <script lang="ts" setup>
-definePageMeta({
-  layout: 'default'
-})
-</script>
 
+</script>
 
 <style>
 

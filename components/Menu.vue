@@ -1,0 +1,18 @@
+<template>
+  <div class=" ">
+    <ul class="flex justify-center content-center items-center font-mono">
+      <li v-for="item in menu" :key="item.name" class="m-2">
+        <nuxt-link :to="item.url" class="text-white">{{ item.name }}</nuxt-link>
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script lang="ts" setup>
+const menu = ref([
+  { name: 'Home', url: '/' },
+  { name: 'About', url: '/about' },
+  { name: 'Projects', url: '/projects' },
+])
+
+</script>
