@@ -1,9 +1,9 @@
 <template>
     <Hero heading="About" subHeading="Profile assessment, personality type and education" :button='true'
         buttonText="Follow the white rabbit" buttonSVG="buttons/white-rabbit" buttonLink="/languages" class=""></Hero>
-    <div class="flex flex-col text-white  w-full space-y-8 xl:p-32">
+    <div class="flex flex-col text-white  w-full space-y-8 xl:p-32 lg:16 md:8">
         <div
-            class="flex flex-col  rounded-md p-4 bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg p-8">
+            class="flex flex-col  rounded-md  bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg p-8">
             <h1 class="text-white text-3xl mb-6">Profile assessment</h1>
             <p>The individual is able to solve complex operational tasks. In addition, people with this score
                 generally have a potential for effective problem solving with unfamiliar tasks and in more complex
@@ -13,7 +13,7 @@
                 to establish methods and cooperation around the most strategic and complex aspects of your job.</p>
         </div>
         <div
-            class="flex flex-col  rounded-md p-4 bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg p-8">
+            class="flex flex-col  rounded-md  bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg p-8">
             <h1 class="text-white text-3xl mb-6 flex items-center">
                 Personality Type - Meyers Brigs Assessment : INTJ Architect
             </h1>
@@ -44,7 +44,7 @@
         </div>
 
         <div
-            class="flow-root rounded-md bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg w-[90%] xl:w-[50%] md:w-[80%]  self-center p-8">
+            class="flow-root rounded-md bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg w-[90%] xl:w-[70%] md:w-[80%]  self-center md:p-8 p-2">
             <ul role="list" class="-mb-8">
                 <li v-for="(event, eventIdx) in timeline" :key="event.id">
                     <div class="relative pb-8">
@@ -57,21 +57,23 @@
                                     <component :is="event.icon" class="h-5 w-5 text-white" aria-hidden="true" />
                                 </span>
                             </div>
-                            <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                            <div
+                                class="flex min-w-0 flex-1 md:justify-between  md:space-x-4 pt-1.5 flex-col md:flex-row">
                                 <div>
                                     <p class="text-sm text-white-500">
                                         {{ event.content }}
                                     </p>
                                     <a :href="event.href" class="font-medium text-white-900">{{ event.target }}</a>
                                 </div>
-                                <div class="whitespace-nowrap text-right text-sm text-white-500">
+                                <div
+                                    class="md:whitespace-nowrap text-right text-sm text-white-500  md:flex self-start md:justify-self-end">
                                     <time :datetime="event.datetime">{{ event.date }}</time>
                                 </div>
                             </div>
 
                         </div>
                         <div v-if="event.child">
-                            <div class="relative flex space-x-3 ml-8 mt-4" v-for="(item, index) in event.child"
+                            <div class="relative flex  space-x-3 ml-8 mt-4" v-for="(item, index) in event.child"
                                 :key=item.id>
                                 <div>
                                     <span
@@ -79,14 +81,16 @@
                                         <component :is="item.icon" class="h-5 w-5 text-white" aria-hidden="true" />
                                     </span>
                                 </div>
-                                <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                                <div
+                                    class="flex min-w-0 flex-1  md:justify-between md:space-x-4 pt-1.5 flex-col md:flex-row  ">
                                     <div>
                                         <p class="text-sm text-white-500">
                                             {{ item.content }}
                                         </p>
                                         <a :href="item.href" class="font-medium text-white-900">{{ item.target }}</a>
                                     </div>
-                                    <div class="whitespace-nowrap text-right text-sm text-white-500">
+                                    <div
+                                        class="md:whitespace-nowrap text-right text-sm text-white-500  md:flex self-start md:justify-self-end">
                                         <time :datetime="item.datetime">{{ item.date }}</time>
                                     </div>
                                 </div>
