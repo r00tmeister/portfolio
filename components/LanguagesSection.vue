@@ -1,5 +1,5 @@
 <template>
-    <div class="md:p-8 ">
+    <div class="md:p-8 space-y-8 ">
         <LanguageTiles title="Front-end" :languages="languages" type="front-end" />
         <LanguageTiles title="Back-end" :languages="languages" type="back-end" />
         <LanguageTiles title="Database" :languages="languages" type="database" />
