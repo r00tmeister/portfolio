@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col justify-center md:h-96 items-center space-y-12 text-wrap ">
-    <h1 class="text-white text-xl md:text-5xl font-bold font-mono text-center"> {{ props.heading }}</h1>
+    <h1 class="text-white text-3xl md:text-5xl font-bold font-mono text-center"> {{ props.heading }}</h1>
     <h3 class="text-white px-8 text-md md:text-2xl font-bold font-mono text-center ">{{ props.subHeading }}</h3>
     <NuxtLink :to="props.buttonLink">
       <button

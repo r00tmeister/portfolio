@@ -4,7 +4,7 @@
     <div class="flex flex-col text-white  w-full space-y-8 xl:p-32 lg:16 md:8">
         <div
             class="flex flex-col  rounded-md  bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg p-8">
-            <h1 class="text-white text-3xl mb-6">Profile assessment</h1>
+            <h1 class="text-white text-xl md:text-3xl font-bold font-mono text-center mb-6">Profile assessment</h1>
             <p>The individual is able to solve complex operational tasks. In addition, people with this score
                 generally have a potential for effective problem solving with unfamiliar tasks and in more complex
                 situations. A mix of routine work with clear instructions and medium to high complexity problem solving
@@ -14,8 +14,8 @@
         </div>
         <div
             class="flex flex-col  rounded-md  bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg p-8">
-            <h1 class="text-white text-3xl mb-6 flex items-center">
-                Personality Type - Meyers Brigs Assessment : INTJ Architect
+            <h1 class="text-white text-xl md:text-3xl font-bold font-mono text-center mb-6 flex flex-col">
+                <span>Personality Type </span><span> Meyers Brigs Assessment </span><span> INTJ Architect</span>
             </h1>
             <div class="space-y-4">
                 <p>INTJ stands for Introverted, Intuitive, Thinking, and Judging.
@@ -45,6 +45,9 @@
 
         <div
             class="flow-root rounded-md bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg w-[90%] xl:w-[70%] md:w-[80%]  self-center md:p-8 p-2">
+            <h1 class="text-white text-xl md:text-3xl font-bold font-mono text-center mb-6 flex flex-col">
+                <span>Timeline</span>
+            </h1>
             <ul role="list" class="-mb-8">
                 <li v-for="(event, eventIdx) in timeline" :key="event.id">
                     <div class="relative pb-8">
