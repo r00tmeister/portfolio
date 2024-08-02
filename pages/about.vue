@@ -1,9 +1,9 @@
 <template>
     <Hero heading="About" subHeading="Profile assessment, personality type and education" :button='true'
         buttonText="Follow the white rabbit" buttonSVG="buttons/white-rabbit" buttonLink="/languages" class=""></Hero>
-    <div class="flex flex-col text-white  space-y-8 p-32">
+    <div class="flex flex-col text-white  w-full space-y-8 xl:p-32">
         <div
-            class="flex flex-col  rounded-md p-4 bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg">
+            class="flex flex-col  rounded-md p-4 bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg p-8">
             <h1 class="text-white text-3xl mb-6">Profile assessment</h1>
             <p>The individual is able to solve complex operational tasks. In addition, people with this score
                 generally have a potential for effective problem solving with unfamiliar tasks and in more complex
@@ -13,7 +13,7 @@
                 to establish methods and cooperation around the most strategic and complex aspects of your job.</p>
         </div>
         <div
-            class="flex flex-col  rounded-md p-4 bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg">
+            class="flex flex-col  rounded-md p-4 bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg p-8">
             <h1 class="text-white text-3xl mb-6 flex items-center">
                 Personality Type - Meyers Brigs Assessment : INTJ Architect
             </h1>
@@ -44,7 +44,7 @@
         </div>
 
         <div
-            class="flow-root rounded-md bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg w-[50%] self-center p-8">
+            class="flow-root rounded-md bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg w-[90%] xl:w-[50%] md:w-[80%]  self-center p-8">
             <ul role="list" class="-mb-8">
                 <li v-for="(event, eventIdx) in timeline" :key="event.id">
                     <div class="relative pb-8">

@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col justify-center h-96 items-center space-y-12 ">
-    <h1 class="text-white text-5xl font-bold font-mono "> {{ props.heading }}</h1>
-    <h3 class="text-white text-2xl font-bold font-mono ">{{ props.subHeading }}</h3>
+  <div class="flex flex-col justify-center h-96 items-center space-y-12 text-wrap ">
+    <h1 class="text-white text-xl md:text-5xl font-bold font-mono text-center"> {{ props.heading }}</h1>
+    <h3 class="text-white px-8 text-md md:text-2xl font-bold font-mono text-center ">{{ props.subHeading }}</h3>
     <NuxtLink :to="props.buttonLink">
       <button
         class="hover:bg-black-700 text-white font-bold py-2 px-4 rounded-lg border-2 border-solid border-white  flex items-center space-x-2">
