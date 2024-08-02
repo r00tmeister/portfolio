@@ -27,10 +27,10 @@
               </button>
             </NuxtLink>
             <div class="mt-6 flex space-x-2">
-              <div class="text-white font-mono justify-center flex flex-col items-center"
+              <div class="text-white font-mono justify-center flex flex-col items-center flex-wrap"
                 v-for="(item, index) in feature.stack" :key="item.id">
-                <img :src="item.imageSrc" :alt="item.imageAlt" width="50" height="50" />
-                <span>{{ item.name }}</span>
+                <img :src="item.imageSrc" :alt="item.imageAlt"  width="40" height="40" />
+                <span class="text-sm md:text-base">{{ item.name }}</span>
               </div>
             </div>
           </div>
@@ -88,9 +88,9 @@ const features = reactive([
       },
       {
         id: 5,
-        name: 'TailwindCSS',
+        name: 'Tailwind',
         imageSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg',
-        imageAlt: 'TailwindCSS',
+        imageAlt: 'Tailwind',
       }
     ]
   },
@@ -129,9 +129,9 @@ const features = reactive([
       },
       {
         id: 5,
-        name: 'TailwindCSS',
+        name: 'Tailwind',
         imageSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg',
-        imageAlt: 'TailwindCSS',
+        imageAlt: 'Tailwind',
       }
     ]
   },
@@ -170,9 +170,9 @@ const features = reactive([
       },
       {
         id: 5,
-        name: 'TailwindCSS',
+        name: 'Tailwind',
         imageSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg',
-        imageAlt: 'TailwindCSS',
+        imageAlt: 'Tailwind',
       }
     ]
   },
@@ -211,9 +211,9 @@ const features = reactive([
       },
       {
         id: 5,
-        name: 'TailwindCSS',
+        name: 'Tailwind',
         imageSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg',
-        imageAlt: 'TailwindCSS',
+        imageAlt: 'Tailwind',
       }
     ]
   },
