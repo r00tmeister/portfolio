@@ -2,7 +2,7 @@
   <div class="rounded-md p-4 bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg">
     <div class="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8">
       <div class="mx-auto max-w-3xl text-center">
-        <h2 class="text-white text-xl md:text-3xl font-bold font-mono text-center mb-6 flex flex-col">Recent Projects
+        <h2 class="text-white text-xl md:text-3xl font-bold font-mono text-center mb-6 flex flex-col ">Recent Projects
         </h2>
         <p class="text-white px-8 text-md md:text-2xl  font-mono text-center ">You are only as good as your
           last project.</p>
@@ -13,22 +13,22 @@
           class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:items-center lg:gap-x-8">
           <div
             :class="[featureIdx % 2 === 0 ? 'lg:col-start-1' : 'lg:col-start-8 xl:col-start-9', 'mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4']">
-            <h3 class="text-lg font-medium text-white">{{ feature.name }}</h3>
+            <h3 class="text-lg font-medium text-white font-mono">{{ feature.name }}</h3>
             <p class="mt-2 text-sm text-gray-500">{{ feature.description }}</p>
             <NuxtLink :to="feature.siteUrl">
-              <button class=" text-white px-4 py-1 mt-4 rounded-md border-solid border-white border-2"><span
+              <button class=" text-white font-mono px-4 py-1 mt-4 rounded-md border-solid border-white border-2"><span
                   class="text-sm md:text-lg">View Site</span>
               </button>
             </NuxtLink>
             <NuxtLink :to="feature.docsUrl" v-if="feature.docsUrl.length > 0">
               <button
-                class=" text-white ml-2 px-4 py-1 mt-4 rounded-md border-solid border-white border-2"><span
+                class=" text-white font-mono ml-2 px-4 py-1 mt-4 rounded-md border-solid border-white border-2"><span
                   class="text-sm md:text-lg ">View Documentation</span>
               </button>
             </NuxtLink>
             <div class="mt-6 flex space-x-2">
-              <div class="text-white justify-center flex flex-col items-center" v-for="(item, index) in feature.stack"
-                :key="item.id">
+              <div class="text-white font-mono justify-center flex flex-col items-center"
+                v-for="(item, index) in feature.stack" :key="item.id">
                 <img :src="item.imageSrc" :alt="item.imageAlt" width="50" height="50" />
                 <span>{{ item.name }}</span>
               </div>

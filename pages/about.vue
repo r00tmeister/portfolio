@@ -1,10 +1,11 @@
 <template>
     <Hero heading="About" subHeading="Profile assessment, personality type and education" :button='true'
         buttonText="Follow the white rabbit" buttonSVG="buttons/white-rabbit" buttonLink="/languages" class=""></Hero>
-    <div class="flex flex-col text-white  w-full space-y-8 xl:p-32 lg:16 md:8">
+    <div class="flex flex-col text-white font-mono w-full space-y-8 xl:p-32 lg:16 md:8">
         <div
             class="flex flex-col  rounded-md  bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg p-8">
-            <h1 class="text-white text-xl md:text-3xl font-bold font-mono text-center mb-6">Profile assessment</h1>
+            <h1 class="text-white text-xl md:text-3xl font-bold font-mono text-center mb-6">Profile assessment
+            </h1>
             <p>The individual is able to solve complex operational tasks. In addition, people with this score
                 generally have a potential for effective problem solving with unfamiliar tasks and in more complex
                 situations. A mix of routine work with clear instructions and medium to high complexity problem solving
@@ -14,7 +15,7 @@
         </div>
         <div
             class="flex flex-col  rounded-md  bg-black bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md shadow-lg p-8">
-            <h1 class="text-white text-xl md:text-3xl font-bold font-mono text-center mb-6 flex flex-col">
+            <h1 class="text-white font-mono text-xl md:text-3xl font-bold text-center mb-6 flex flex-col">
                 <span>Personality Type </span><span> Meyers Brigs Assessment </span><span> INTJ Architect</span>
             </h1>
             <div class="space-y-4">
@@ -37,7 +38,8 @@
                     every topic that piques their interest.
                 </p>
                 <NuxtLink to="https://www.16personalities.com/intj-personality">
-                    <button class="text-white ml-2 px-4 py-1 mt-4 rounded-md border-solid border-white border-2 ">
+                    <button
+                        class="text-white ml-2 px-4 py-1 mt-4 rounded-md border-solid border-white border-2 font-mono ">
                         Learn more</button>
                 </NuxtLink>
             </div>
@@ -57,19 +59,21 @@
                             <div>
                                 <span
                                     :class="[event.iconBackground, 'flex h-8 w-8 items-center justify-center rounded-full ring-2 ring-[]']">
-                                    <component :is="event.icon" class="h-5 w-5 text-white" aria-hidden="true" />
+                                    <component :is="event.icon" class="h-5 w-5 font-mono text-white"
+                                        aria-hidden="true" />
                                 </span>
                             </div>
                             <div
                                 class="flex min-w-0 flex-1 md:justify-between  md:space-x-4 pt-1.5 flex-col md:flex-row">
                                 <div>
-                                    <p class="text-sm text-white-500">
+                                    <p class="text-sm font-mono text-white-500">
                                         {{ event.content }}
                                     </p>
-                                    <a :href="event.href" class="font-medium text-white-900">{{ event.target }}</a>
+                                    <a :href="event.href" class="font-medium font-mono text-white-900">{{ event.target
+                                        }}</a>
                                 </div>
                                 <div
-                                    class="md:whitespace-nowrap text-right text-sm text-white-500  md:flex self-start md:justify-self-end">
+                                    class="md:whitespace-nowrap text-right font-mono text-sm text-white-500  md:flex self-start md:justify-self-end">
                                     <time :datetime="event.datetime">{{ event.date }}</time>
                                 </div>
                             </div>
@@ -81,19 +85,21 @@
                                 <div>
                                     <span
                                         :class="[item.iconBackground, 'flex h-8 w-8 items-center justify-center rounded-full ring-2 ring-[]']">
-                                        <component :is="item.icon" class="h-5 w-5 text-white" aria-hidden="true" />
+                                        <component :is="item.icon" class="h-5 w-5 font-mono text-white"
+                                            aria-hidden="true" />
                                     </span>
                                 </div>
                                 <div
                                     class="flex min-w-0 flex-1  md:justify-between md:space-x-4 pt-1.5 flex-col md:flex-row  ">
                                     <div>
-                                        <p class="text-sm text-white-500">
+                                        <p class="text-sm text-white-500 font-mono">
                                             {{ item.content }}
                                         </p>
-                                        <a :href="item.href" class="font-medium text-white-900">{{ item.target }}</a>
+                                        <a :href="item.href" class="font-medium text-white-900 font-mono">{{ item.target
+                                            }}</a>
                                     </div>
                                     <div
-                                        class="md:whitespace-nowrap text-right text-sm text-white-500  md:flex self-start md:justify-self-end">
+                                        class="md:whitespace-nowrap text-right text-sm text-white-500 font-mono  md:flex self-start md:justify-self-end">
                                         <time :datetime="item.datetime">{{ item.date }}</time>
                                     </div>
                                 </div>
