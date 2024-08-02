@@ -45,7 +45,7 @@ The Virtual CV Portfolio is a web application designed to showcase personal info
    ```
 2. **Navigate to the Project Directory:**
    ```bash
-   cd your-repo
+   cd portfolio
    ```
 3. **Install Dependencies:**
    ```bash
