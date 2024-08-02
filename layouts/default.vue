@@ -1,6 +1,6 @@
 <template>
-    <MatrixRain class="absolute inset-0"></MatrixRain>
-    <div class="min-h-screen overflow-hidden">
+    <MatrixRain class="fixed inset-0 h-full z-[-1]"></MatrixRain>
+    <div class="relative min-h-screen overflow-hidden z-10">
         <Menu></Menu>
         <slot></slot>
         <Footer></Footer>

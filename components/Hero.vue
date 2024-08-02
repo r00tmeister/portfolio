@@ -1,14 +1,26 @@
 <template>
   <div class="flex flex-col justify-center h-96 items-center space-y-12 ">
-    <h1 class="text-white text-5xl font-bold font-mono ">Welcome to my portfolio  ... </h1>
-    <button class="hover:bg-black-700 text-white font-bold py-2 px-4 rounded bg-gray-700 opacity-50">
-      <span class="opacity-none animate-pulse hover:animate-spin">Follow the white rabbit</span>
-    </button>
-
+    <h1 class="text-white text-5xl font-bold font-mono "> {{ props.heading }}</h1>
+    <h3 class="text-white text-2xl font-bold font-mono ">{{ props.subHeading }}</h3>
+    <NuxtLink :to="props.buttonLink">
+      <button
+        class="hover:bg-black-700 text-white font-bold py-2 px-4 rounded-lg border-2 border-solid border-white  flex items-center space-x-2">
+        <span class="opacity-none animate-pulse " v-if="props.button">{{ props.buttonText }} </span>
+        <nuxt-icon name="buttons/whiteRabbit" class="animate-bounce text-lg font-bold"></nuxt-icon>
+      </button>
+    </NuxtLink>
   </div>
 </template>
 
 <script lang="ts" setup>
+const props = defineProps({
+  heading: String,
+  subHeading: String,
+  button: Boolean,
+  buttonText: String,
+  buttonSVG: String,
+  buttonLink: String
+})
 
 </script>
 

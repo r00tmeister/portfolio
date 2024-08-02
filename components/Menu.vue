@@ -13,8 +13,6 @@ const menu = ref([
   { name: 'Home', url: '/' },
   { name: 'About', url: '/about' },
   { name: 'Languages', url: '/languages' },
-  { name: 'Personality', url: '/personality' },
-  { name: 'Education', url: '/education' },
   { name: 'Projects', url: '/projects' },
 ])
 

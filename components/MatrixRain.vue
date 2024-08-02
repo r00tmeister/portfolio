@@ -14,7 +14,7 @@ onMounted(() => {
     const resizeCanvas = () => {
         const { width, height } = canvas.getBoundingClientRect()
         canvas.width = width * dpr
-        canvas.height = height * dpr
+        canvas.height = (height) * dpr
         ctx.scale(dpr, dpr)
     }
 
@@ -27,6 +27,7 @@ onMounted(() => {
         ctx.fillStyle = 'rgba(0, 0, 0, 0.05)'
         ctx.fillRect(0, 0, canvas.width, canvas.height)
         ctx.fillStyle = '#0F0'
+       /*  ctx.fillStyle = '#990F02' */
         ctx.font = '10px monospace'
         for (let i = 0; i < drops.length; i++) {
             const text = String.fromCharCode(1e2 + Math.random() * 33)
@@ -38,7 +39,7 @@ onMounted(() => {
         }
     }
 
-    const intervalId = setInterval(draw, 33)
+    const intervalId = setInterval(draw, 42)
 
     window.addEventListener('resize', resizeCanvas)
 
