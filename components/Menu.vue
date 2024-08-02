@@ -1,9 +1,9 @@
 <template>
   <div class="hidden md:flex items-center justify-center">
     <ul class="flex justify-center content-center items-center font-mono">
-      <li v-for="item in menu" :key="item.name" class="m-8 ">
-        <nuxt-link :to="item.url" class="text-white ">{{ item.name }}</nuxt-link>
-      </li>
+        <li v-for="item in menu" :key="item.name" class="m-8 ">
+          <nuxt-link :to="item.url" class="text-white ">{{ item.name }}</nuxt-link>
+        </li>
     </ul>
   </div>
   <div class="md:hidden">
@@ -11,12 +11,15 @@
       <li class="m-8 self-end" @click="burgerMenu = !burgerMenu">
         <Bars4Icon class="h-8 w-8 text-white" />
       </li>
-      <li v-for="item in menu" :key="item.name" class="m-8 flex flex-col" v-if="burgerMenu"
-        @click="burgerMenu = !burgerMenu">
-        <nuxt-link :to="item.url" class="text-white ">{{ item.name }}</nuxt-link>
-      </li>
+      <TransitionGroup name="list">
+        <li v-for="item in menu" :key="item.name" class="m-8 flex flex-col" v-if="burgerMenu"
+          @click="burgerMenu = !burgerMenu">
+          <nuxt-link :to="item.url" class="text-white ">{{ item.name }}</nuxt-link>
+        </li>
+      </TransitionGroup>
     </ul>
   </div>
+
 </template>
 
 <script lang="ts" setup>
@@ -30,3 +33,25 @@ const menu = ref([
 ])
 
 </script>
+<style>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+</style>
