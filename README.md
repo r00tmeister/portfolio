@@ -56,6 +56,9 @@ The Virtual CV Portfolio is a web application designed to showcase personal info
    npm run dev
    ```
 
+## Project configuration
+- In the nuxt.config.ts file set baseURL: "/portfolio" to your repo name, this is important as Github Pages deploys the application at this root.
+
 ## Project Structure
 - **/assets:** Static assets like images and fonts.
 - **/components:** Vue components used throughout the application.
