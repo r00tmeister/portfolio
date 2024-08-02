@@ -41,7 +41,7 @@ The Virtual CV Portfolio is a web application designed to showcase personal info
 ### Installation Steps
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/r00tmeister/portfolio.git
    ```
 2. **Navigate to the Project Directory:**
    ```bash
