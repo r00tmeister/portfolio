@@ -34,24 +34,19 @@ const menu = ref([
 
 </script>
 <style>
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease;
-}
 
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
-}
-
-.list-enter-active,
-.list-leave-active {
+.list-enter-active{
   transition: all 0.5s ease;
 }
+
+.list-leave-active {
+  transition: all 0.1s ease;
+}
+
+
 
 .list-enter-from,
 .list-leave-to {
   opacity: 0;
   transform: translateX(30px);
-}
-</style>
+}</style>
