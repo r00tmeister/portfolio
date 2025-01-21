@@ -59,7 +59,7 @@ const features = reactive([
       'The RAG chatbot is a state of the art chatbot that uses the RAG model to generate responses to user queries. The chatbot is trained on a large dataset of user queries and files uploaded by the users, files are OCRd, chunked, embedded as vectors, stored in a vector database and is then able to generate responses that are relevant to the user query using cosine similarities to find relevant data.',
     imageSrc: ragChatbotImage,
     siteUrl: 'https://white-hill-02be3721e.5.azurestaticapps.net/',
-    docsUrl: 'https://purple-pebble-0f8ea6e03.5.azurestaticapps.net/',
+    docsUrl: 'https://blue-forest-0eb187803.5.azurestaticapps.net/',
     imageAlt: 'RAG chatbot',
     stack: [
       {
@@ -99,8 +99,8 @@ const features = reactive([
     description:
       'The PII detection and redaction tool is a state of the art tool that uses machine learning to detect and redact personal identifiable information from documents. The tool is able to detect a wide range of PII including names, addresses, phone numbers, and social security numbers. Users have the ability to export redacted documents in a variety of formats including PDF, Word, and Excel.',
     imageSrc: piiImage,
-    siteUrl: 'https://lemon-field-05638fa03.4.azurestaticapps.net/',
-    docsUrl: 'https://proud-mud-001e54f03.5.azurestaticapps.net/',
+    siteUrl: 'https://gentle-sky-09db5af03.5.azurestaticapps.net/',
+    docsUrl: 'https://calm-sky-046430303.4.azurestaticapps.net/',
     imageAlt: 'PII detection and redaction tool',
     stack: [
       {
