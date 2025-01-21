@@ -18,7 +18,7 @@ const languages = ref([{ id: 0, name: 'HTML', type: 'front-end', imageUrl: 'http
     name: 'CSS',
     type: 'front-end',
     imageUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
-    proficiency: "5",
+    proficiency: "5/5",
     experience: 5
 }, {
     id: 2,
